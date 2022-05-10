@@ -74,7 +74,7 @@ export default function reportsReducer(state = {}, action) {
         ...state,
         [report.creation_method]: {
           ...state[report.creation_method],
-          [reportId]: report,
+          [reportTypeId]: report,
         },
       };
     },
