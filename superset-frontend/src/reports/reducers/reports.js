@@ -68,7 +68,7 @@ export default function reportsReducer(state = {}, action) {
         ...action.json.result,
         id: action.json.id,
       };
-      const reportId = report.dashboard || report.chart;
+      const reportTypeId = report.dashboard || report.chart;
 
       return {
         ...state,
